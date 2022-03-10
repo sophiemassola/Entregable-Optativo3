@@ -19,16 +19,12 @@ while (a != 'EXIT'){
     if (a != 'EXIT'){
         productos.push(a);
     }
-    
-
 }
-
 
 
 
 //Por cada elemento del array voy a crear un nuevo elemento y voy a hacer un append.
 productos.forEach( (x) => {
-    //console.log(x);
     const nuevoProducto = document.createElement('li');
     nuevoProducto.innerText = x;
     supermercado.append(nuevoProducto);
